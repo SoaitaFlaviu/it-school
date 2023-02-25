@@ -63,19 +63,23 @@ elif a <= b:
 
 nrcrt = int(input("Introduceti un numar format din trei cifre:" )) 
 
-if nrcrt <= 100:
+if nrcrt < 100 or nrcrt > 999:
     print("Eroare")
-if nrcrt >= 100 and nrcrt % 5:
-    print(nrcrt - 5)
+if nrcrt % 10 >= 5:
+    print(nrcrt+(nrcrt%10))
 else:
-    print(nrcrt + 5)
+    print(nrcrt-(nrcrt%10))
 
 #Exercitiul 6
 #  Scrie un program care afiseaza urmatoarea 
 # sctructura, unde n = 6, folosind instructiunea while:
+#a = int(input("Introduceti un numar pana la 10: "))
 
-n = 6
-i = str("*")
+n = int(input("Introducet un numar"))
 
-while n <= 6:
-    print(i + str("1"))
+c = 1
+
+while n <= 10:
+    print("*" * c)
+    c = c + 1
+
