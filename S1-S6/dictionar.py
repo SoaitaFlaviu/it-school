@@ -18,3 +18,4 @@ contact["address"] = "Iasi" # Creeare cheie noua (Daca exista o actualizeaza)
 
 print(contact)
 
+995
