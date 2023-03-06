@@ -45,3 +45,53 @@ print(sorted(dict4, reverse = True))
 
 print("-" * 30)
 
+
+ #Exercitiul 4
+
+dict4 = {
+   'Alex' : 35,
+   'Andrei' : 44,
+   'Rares' : 23,
+ }
+
+dict4['Luca'] = '65'
+
+print(dict4)
+
+print("-" * 30)
+
+#Exercitiul 5
+
+dict5 = {
+    'Alex' : 'Str. Oglinzilor',
+   'Andrei' : 'Str. Uranus',
+   'Rares' : 'Str. Albac',
+}
+
+print(dict5)
+
+print("-" * 30)
+
+dict5['Andrei'] = 'Str.Luces'
+
+print(dict5)
+
+print("-" * 30)
+
+#Exercitiul 6
+
+dict6 = {
+    'Alex' : 35,
+   'Andrei' : 44,
+   'Rares' : 23,
+}
+
+del dict6['Rares']
+
+print(dict6)
+
+print("-" * 30)
+
+#Exercitiul 7
+
+
