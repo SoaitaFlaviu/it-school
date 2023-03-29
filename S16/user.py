@@ -7,6 +7,3 @@ class Person:
 
 vlad = Person()
 maria = Person()
-
-vw = Car()
-ford = Car()
