@@ -87,4 +87,7 @@ class GasStation:
             except ValueError:
                 break
         return x * self.__price
-        
+
+
+
+"""stop engine si pus pompa pe busy si apoi pe free"""
