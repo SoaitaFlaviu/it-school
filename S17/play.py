@@ -95,6 +95,22 @@ class Deck:
         # trebuie sa returneze int sau float
         return len(self.__cards)
 
+    def __iter__(self):
+        self.__current_card = 0
+        return self
+    
+    def __next__(self):
+        
+        if self.__current_card == len(self.__cards):
+            raise StopIteration()
+        cc = self.__cards[self.__current_card]
+        self.__current_card += 1
+        return cc
+    
+    def __reversed__(self):
+        return reversed(self.__cards)
+    
+    
     def get_cards(self, n) -> List[Card]:
         """Return n cards."""
         list1 = []
